@@ -10,7 +10,7 @@
 
   <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 
-  <title>Link Lock - Password-protect links</title>
+  <title>Protetor de Link</title>
 
   <!-- Styles -->
   <link rel="stylesheet" href="../style.css" type="text/css" />
@@ -60,8 +60,8 @@
 
   <!-- Display errors in a big red box -->
   <div class="error red-border" style="display: none">
-    <p id="errortext">Error</p>
-    <button onclick="main()">Try again</button>
+    <p id="errortext">Erro</p>
+    <button onclick="main()">Tente novamente</button>
   </div>
 
   <!-- Project description -->
@@ -85,7 +85,7 @@
   <!-- Main form -->
   <div class="form">
     <div class="labeled-input">
-      <label for="url">secret link</label>
+      <label for="url">link secreto</label>
       <input type="url" id="url" placeholder="https://" oninvalid="if (!this.validity.customError) this.setCustomValidity('Please enter a valid URL. Make sure to include \'http://\' or \'https://\' at the beginning.')" oninput="this.setCustomValidity('')" required />
     </div>
     <div class="labeled-input hint">
